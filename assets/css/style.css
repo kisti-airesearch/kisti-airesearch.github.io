@@ -310,20 +310,6 @@ a:hover { text-decoration: underline; }
   box-shadow: var(--shadow);
 }
 
-.person .avatar {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--kisti-blue), var(--accent));
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 19px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
 .person .name { font-weight: 700; color: var(--navy); font-size: 16.5px; }
 .person .role { font-size: 13.5px; color: var(--blue); margin-top: 2px; font-weight: 600; }
 .person .interest { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; }

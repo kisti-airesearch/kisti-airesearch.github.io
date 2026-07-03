@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Large-scale AI Research Center, KISTI</title>
+  <meta name="description" content="Research areas of the Large-scale AI Research Center at KISTI: KONI large language models, AI for Science, scientific data construction, and large-scale AI infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/KISTI_logo.jpg" alt="KISTI — Korea Institute of Science and Technology Information" />
+        <span class="brand-text">
+          <span class="brand-name">Large-scale AI Research Center</span>
+          <span class="brand-sub">Division of AI and Data</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Research</h1>
+      <p>
+        From training foundation models on national supercomputers to applying them to
+        real scientific problems — our research covers the full stack of large-scale AI.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="research-block">
+        <div class="icon">🧠</div>
+        <div>
+          <h3>Science-Specialized Large Language Models — KONI</h3>
+          <p>
+            We develop <strong>KONI (KISTI Open Natural Intelligence)</strong>, a family of
+            large language models specialized for the science and technology domain that
+            excel in both Korean and English. KONI models are built through continual
+            pretraining on large scientific corpora, supervised fine-tuning (SFT), and
+            preference optimization (DPO), and are released openly so that anyone can
+            build upon them.
+          </p>
+          <ul>
+            <li>Continual pretraining on Korean/English scientific text</li>
+            <li>Instruction tuning and alignment for research-assistant use cases</li>
+            <li>Open release of models on <a href="https://huggingface.co/KISTI-KONI" target="_blank" rel="noopener">Hugging Face</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-block">
+        <div class="icon">🔬</div>
+        <div>
+          <h3>AI for Science</h3>
+          <p>
+            We apply large-scale AI to accelerate scientific discovery. Leveraging KISTI's
+            national science and technology information resources, we build LLM-based
+            technologies that help researchers navigate, understand, and generate
+            scientific knowledge.
+          </p>
+          <ul>
+            <li>Scientific literature understanding and knowledge extraction</li>
+            <li>Retrieval-augmented question answering over S&amp;T information</li>
+            <li>AI research assistants for the Korean research community</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-block">
+        <div class="icon">📚</div>
+        <div>
+          <h3>Scientific Data, Corpora &amp; Benchmarks</h3>
+          <p>
+            High-quality data is the foundation of capable models. We construct and openly
+            share large-scale Korean scientific text corpora, instruction datasets, and
+            evaluation benchmarks tailored to the science and technology domain.
+          </p>
+          <ul>
+            <li>Large-scale Korean scientific corpora for pretraining</li>
+            <li>Domain instruction datasets for fine-tuning</li>
+            <li>Benchmarks for evaluating scientific knowledge and reasoning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-block">
+        <div class="icon">⚡</div>
+        <div>
+          <h3>Large-scale AI Infrastructure &amp; Platforms</h3>
+          <p>
+            Training and serving large models requires serious systems work. Building on
+            KISTI's role as the operator of Korea's national supercomputing infrastructure,
+            we research efficient distributed training, model compression and optimization,
+            and platform technologies for delivering AI services at national scale.
+          </p>
+          <ul>
+            <li>Distributed training of foundation models on supercomputers</li>
+            <li>Efficient inference and model optimization</li>
+            <li>AI service platforms for the research ecosystem</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Large-scale AI Research Center</h4>
+          <p>
+            Division of AI and Data<br />
+            Korea Institute of Science and Technology Information (KISTI)<br />
+            245 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea
+          </p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="https://www.kisti.re.kr/eng/" target="_blank" rel="noopener">KISTI</a></li>
+            <li><a href="https://huggingface.co/KISTI-KONI" target="_blank" rel="noopener">KONI on Hugging Face</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Large-scale AI Research Center, KISTI. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

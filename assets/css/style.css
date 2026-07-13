@@ -311,6 +311,8 @@ a:hover { text-decoration: underline; }
 }
 
 .person .name { font-weight: 700; color: var(--navy); font-size: 16.5px; }
+.person .name a { color: inherit; }
+.person .name a:hover { text-decoration: underline; }
 .person .role { font-size: 13.5px; color: var(--blue); margin-top: 2px; font-weight: 600; }
 .person .interest { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; }
 .person .links { margin-top: 10px; font-size: 13.5px; }

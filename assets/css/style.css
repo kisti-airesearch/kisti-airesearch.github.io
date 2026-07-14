@@ -391,7 +391,8 @@ a:hover { text-decoration: underline; }
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: var(--blue-light);
+  background: #ffffff;
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -401,10 +402,6 @@ a:hover { text-decoration: underline; }
   width: 68%;
   height: 68%;
   object-fit: contain;
-}
-.research-block .icon.icon-logo {
-  background: #ffffff;
-  border: 1px solid var(--border);
 }
 .research-block h3 { font-size: 20px; color: var(--navy); margin-bottom: 8px; }
 .research-block p { color: var(--text-muted); max-width: 760px; }

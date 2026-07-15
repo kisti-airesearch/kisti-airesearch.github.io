@@ -367,7 +367,7 @@ a:hover { text-decoration: underline; }
 
 .research-block {
   display: grid;
-  grid-template-columns: 64px 1fr;
+  grid-template-columns: 84px 1fr;
   gap: 24px;
   padding: 34px 0;
   border-bottom: 1px solid var(--border);
@@ -375,22 +375,16 @@ a:hover { text-decoration: underline; }
 .research-block:last-child { border-bottom: none; }
 
 .research-block.sub {
-  grid-template-columns: 44px 1fr;
+  grid-template-columns: 84px 1fr;
   gap: 24px;
   padding: 22px 0 22px 32px;
-}
-.research-block.sub .icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 11px;
-  font-size: 18px;
 }
 .research-block.sub h3 { font-size: 17px; }
 
 .research-block .icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
+  width: 84px;
+  height: 84px;
+  border-radius: 18px;
   background: #ffffff;
   border: 1px solid var(--border);
   display: flex;

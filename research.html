@@ -118,20 +118,39 @@
         </div>
       </div>
 
+      <div class="research-block sub" id="koni-weave">
+        <div class="icon"><img src="images/KONI-Weave_logo.png" alt="KONI-Weave logo" class="icon-img" /></div>
+        <div>
+          <h3>KONI-Weave</h3>
+          <p>
+            The data pillar of the KONI Series. Weave turns messy source documents — HWP,
+            PDF, DOCX — into structured, balanced training data without a hand-defined
+            schema: it discovers document types and metadata fields directly from the
+            corpus, classifies every document against them, and groups the results into a
+            reusable knowledge base rather than a disposable intermediate step.
+          </p>
+          <ul>
+            <li>Automatic schema discovery: candidate fields are scored by corpus frequency, discriminative power, and redundancy — no manual taxonomy to define or maintain</li>
+            <li>Five-stage pipeline: parsing, schema discovery, classification, entity-based knowledge base construction, and balanced training-data synthesis</li>
+            <li>Designed for scale, targeting corpora of roughly 100 million pages (currently at the design-and-prototype stage)</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="research-block sub" id="koni-forge">
         <div class="icon"><img src="images/KONI-Forge_logo.png" alt="KONI-Forge logo" class="icon-img" /></div>
         <div>
           <h3>KONI-Forge</h3>
           <p>
-            The training pipeline behind the KONI family — the continual pretraining,
-            supervised fine-tuning, and preference optimization infrastructure used to
-            forge each new KONI model at scale on KISTI's national supercomputing
-            resources.
+            The training-operations pillar of the KONI Series. Rather than guessing whether
+            to use retrieval, fine-tuning, or both, Forge measures how much a base model
+            already knows about a target domain and adapts it accordingly — a five-stage
+            pipeline that runs entirely locally, with no external API calls.
           </p>
           <ul>
-            <li>Large-scale continual pretraining on scientific corpora</li>
-            <li>SFT and DPO recipes for instruction-following and alignment</li>
-            <li>Reusable, scalable training infrastructure for future KONI releases</li>
+            <li>KBD (Knowledge Boundary Detection) scores what the base model already knows on a 0–1 scale and routes the strategy — retrieval-only, hybrid, or full fine-tuning — recommending the right one in about 83% of cases within minutes</li>
+            <li>TWIST expands training data by varying sentence structure rather than swapping synonyms, while a training agent auto-sets hyperparameters such as LoRA rank, learning rate, and step count</li>
+            <li>BiLT guards against catastrophic forgetting during training; at inference, queries are routed between retrieval and the fine-tuned model and blended by confidence</li>
           </ul>
         </div>
       </div>
@@ -141,31 +160,16 @@
         <div>
           <h3>KONI-Prism</h3>
           <p>
-            A multi-faceted evaluation and analysis suite for KONI models — breaking down
-            model behavior the way a prism splits light, across Korean/English scientific
-            reasoning, safety, and domain accuracy.
+            The application layer of the KONI Series, and the most mature of the three
+            pillars. Prism is a private, multimodal research assistant — reading text,
+            images, and audio together — built for air-gapped settings where no cloud
+            service can be called.
           </p>
           <ul>
-            <li>Benchmarking across scientific and general-domain tasks in Korean and English</li>
-            <li>Fine-grained analysis of model strengths, weaknesses, and failure modes</li>
-            <li>Feedback loop that informs the next round of KONI training</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="research-block sub" id="koni-weave">
-        <div class="icon"><img src="images/KONI-Weave_logo.png" alt="KONI-Weave logo" class="icon-img" /></div>
-        <div>
-          <h3>KONI-Weave</h3>
-          <p>
-            The integration layer that weaves KONI models together with retrieval, tools,
-            and agents — turning individual models into research-assistant applications
-            and multi-agent workflows.
-          </p>
-          <ul>
-            <li>Retrieval-augmented pipelines connecting KONI to KISTI's S&amp;T knowledge base</li>
-            <li>Tool use and agent orchestration built on top of KONI models</li>
-            <li>Reference implementations for downstream research applications</li>
+            <li>DMAR routes each modality to the right specialist model under a fixed memory budget, scaling from 24GB consumer GPUs to 80GB data-center cards with zero memory violations</li>
+            <li>CMAE detects cross-modal conflicts (e.g. a chart and its source text disagreeing) by projecting outputs into a shared embedding space and producing a trust score, instead of silently averaging the conflict away</li>
+            <li>HMMR maintains three-tier long-term memory across sessions, and MARS attributes every sentence to its sources and grades the overall answer's confidence</li>
+            <li>In evaluation: zero memory violations at 24GB, strong conflict detection with no false alarms, near-perfect memory retrieval, and citation precision of 0.995</li>
           </ul>
         </div>
       </div>

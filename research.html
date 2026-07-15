@@ -193,6 +193,28 @@
         </div>
       </div>
 
+      <div class="research-block" id="koni-graph">
+        <div class="icon">🕸️</div>
+        <div>
+          <h3>KONI-Graph: A Self-Evolving Knowledge Graph Platform</h3>
+          <p>
+            KONI-Graph is a self-evolving knowledge graph (KG) platform that automatically
+            transforms domain documents into a structured, queryable knowledge base. It
+            extracts entities and relations from ingested documents, serves grounded
+            answers with source citations through Graph RAG, and—when a query reveals a
+            knowledge gap—autonomously retrieves external knowledge and merges it into the
+            graph under strict verification. The platform is domain-agnostic and designed
+            for air-gapped deployment, with every component (LLM, embedding, search)
+            swappable between cloud APIs and on-premises models.
+          </p>
+          <ul>
+            <li><strong>Automated Document-to-Graph Construction.</strong> Ingested documents are automatically converted into nodes and edges through chunking and two-pass LLM extraction, with the document's hierarchical structure preserved in the graph. A domain knowledge graph is built without manual knowledge modeling.</li>
+            <li><strong>Self-Evolving Knowledge Augmentation.</strong> When the system cannot answer a query, it detects the knowledge gap, retrieves external knowledge, expands the graph on the fly, and re-answers the original question. Knowledge grows along the direction of actual user demand rather than through bulk pre-ingestion.</li>
+            <li><strong>Contamination-Proof Knowledge Curation.</strong> All incoming knowledge—whether from document ingestion or self-expansion—passes through a single gated pipeline: rule-based validation, conservative entity resolution, and an LLM judge that enforces source authority (official documents &gt; curated corpus &gt; web). Conflicting or citation-spoofed content is blocked or quarantined rather than silently merged, and every answer carries citations traceable back to the original source.</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 

@@ -403,6 +403,9 @@ a:hover { text-decoration: underline; }
 }
 .research-block li { margin-bottom: 4px; }
 
+.video-link { margin-top: 14px; font-size: 14px; font-weight: 600; }
+.video-link a { color: var(--blue); }
+
 /* Model links (Hugging Face etc.) */
 .model-links { margin-top: 14px; }
 .model-links a {

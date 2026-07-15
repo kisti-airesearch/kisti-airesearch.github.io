@@ -160,7 +160,7 @@
         <div>
           <h3>KONI-Prism</h3>
           <p>
-            The application layer of the KONI Series, and the most mature of the three
+            The application layer of the KONI Series, and the most mature of its
             pillars. Prism is a private, multimodal research assistant — reading text,
             images, and audio together — built for air-gapped settings where no cloud
             service can be called.
@@ -170,6 +170,25 @@
             <li>CMAE detects cross-modal conflicts (e.g. a chart and its source text disagreeing) by projecting outputs into a shared embedding space and producing a trust score, instead of silently averaging the conflict away</li>
             <li>HMMR maintains three-tier long-term memory across sessions, and MARS attributes every sentence to its sources and grades the overall answer's confidence</li>
             <li>In evaluation: zero memory violations at 24GB, strong conflict detection with no false alarms, near-perfect memory retrieval, and citation precision of 0.995</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-block" id="koni-webagent">
+        <div class="icon"><img src="images/KONI-WebAgent_logo.png" alt="KONI-WebAgent logo" class="icon-img" /></div>
+        <div>
+          <h3>KONI-WebAgent</h3>
+          <p>
+            The web-agent pillar of the KONI Series. Rather than driving a browser from
+            screenshots alone, WebAgent reads a source document and acts on the web from
+            it — filling forms and navigating multi-step flows, with a human approving
+            anything irreversible. It ships today as a Chrome/Edge extension that runs
+            entirely in the browser.
+          </p>
+          <ul>
+            <li>DGFF (Document-Grounded Form Filling) parses HWP · PDF · DOCX, tables and page structure included, and binds each value to a detected form field — no input is written without a backing document span</li>
+            <li>Plan–Navigate–Verify loop: Planner decomposes the goal, Navigator clicks and types, Validator checks each result — each on its own model, re-planning automatically when a page doesn't match</li>
+            <li>IAG (Irreversible-Action Gate) holds submit, payment, and send for explicit approval; local by construction under Manifest V3, so credentials never leave the device</li>
           </ul>
         </div>
       </div>

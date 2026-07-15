@@ -268,6 +268,15 @@ a:hover { text-decoration: underline; }
   margin-bottom: 18px;
   font-size: 22px;
 }
+.card-icon.card-icon-logo {
+  background: #ffffff;
+  border: 1px solid var(--border);
+}
+.card-icon-img {
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
+}
 
 .card h3 { font-size: 18px; color: var(--navy); margin-bottom: 10px; }
 .card p { font-size: 14.5px; color: var(--text-muted); }
@@ -373,13 +382,6 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 .research-block:last-child { border-bottom: none; }
-
-.research-block.sub {
-  grid-template-columns: 84px 1fr;
-  gap: 24px;
-  padding: 22px 0 22px 32px;
-}
-.research-block.sub h3 { font-size: 17px; }
 
 .research-block .icon {
   width: 84px;

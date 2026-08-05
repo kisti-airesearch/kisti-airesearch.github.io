@@ -415,15 +415,12 @@ a:hover { text-decoration: underline; }
 .video-link { margin-top: 14px; font-size: 14px; font-weight: 600; }
 .video-link a { color: var(--blue); }
 
-/* Embedded video (YouTube iframe)
-   Breaks out of the 1080px container so the player reaches 1440px — 4x the
-   area of the previous 720px embed — shrinking with the viewport below that. */
+/* Embedded video (YouTube iframe) — spans the content column, so it lines up
+   with the section rules and the news list below it. */
 .video-embed,
 .video-caption {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(1440px, calc(100vw - 48px));
+  width: 100%;
+  max-width: 960px;
 }
 
 .video-embed {

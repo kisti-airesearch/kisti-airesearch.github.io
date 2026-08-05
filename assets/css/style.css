@@ -448,6 +448,8 @@ a:hover { text-decoration: underline; }
 .site-footer ul { list-style: none; }
 .site-footer li { margin-bottom: 8px; }
 
+.footer-contact { margin-top: 12px; }
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 22px;

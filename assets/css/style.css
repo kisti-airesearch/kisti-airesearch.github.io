@@ -404,6 +404,7 @@ a:hover { text-decoration: underline; }
   object-fit: contain;
 }
 .research-block h3 { font-size: 20px; color: var(--navy); margin-bottom: 8px; }
+.research-block h3 a { color: inherit; }
 .research-block p { color: var(--text-muted); max-width: 760px; }
 .research-block ul {
   margin: 12px 0 0 18px;

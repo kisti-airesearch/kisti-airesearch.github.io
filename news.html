@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Large-scale AI Research Center, KISTI</title>
+  <meta name="description" content="News and announcements from the Large-scale AI Research Center, Division of AI and Data, KISTI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/KISTI_logo.jpg" alt="KISTI — Korea Institute of Science and Technology Information" />
+        <span class="brand-text">
+          <span class="brand-name">Large-scale AI Research Center</span>
+          <span class="brand-sub">Division of AI and Data</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="news.html" class="active">News</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>News</h1>
+      <p>Announcements and updates from the center.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- ================================================================
+           HOW TO ADD A NEWS ITEM
+           Copy one of the <li> blocks below into the list for its year:
+             - id     : short kebab-case slug, unique across the page. The
+                        home page deep-links to it as news.html#that-slug.
+             - <time> : YYYY.MM.DD (use YYYY.MM if the day does not matter)
+             - <h3>   : the headline — keep it short enough to read as a
+                        one-line title on the home page
+             - <p>    : the body; link out where it helps
+           Keep entries newest-first. When the year changes, add a new
+           <h2 class="pub-year"> heading followed by its own <ul>.
+
+           The home page (index.html) lists only the latest few HEADLINES and
+           links back here for the full text. When you add an item, update
+           that list too and drop the oldest one.
+
+           This page is for our own announcements — awards, events, booths,
+           releases, hiring. Press coverage by outside outlets goes on
+           media.html instead.
+           ================================================================ -->
+
+      <h2 class="pub-year">2026</h2>
+      <ul class="news-list">
+        <li id="kdd-2026">
+          <time>2026.08.09</time>
+          <div class="news-body">
+            <h3>KDD 2026 Showcase — Pushing the Boundaries of AI for Science</h3>
+            <p>
+              We presented our latest technological advancements at
+              <a href="https://kdd2026.kdd.org/" target="_blank" rel="noopener">KDD 2026</a>, the
+              premier global conference on data mining and artificial intelligence, held
+              August 9–13 at ICC Jeju.
+            </p>
+            <p>
+              At this year's corporate exhibition, the KISTI Large-scale AI Research Center
+              highlighted an end-to-end ecosystem designed to accelerate scientific discovery,
+              automate research workflows, and streamline large language model operations.
+            </p>
+
+            <div class="news-figures">
+              <img src="images/KDD2026_img01.jpg" alt="The KISTI Large-scale AI Research Center booth at KDD 2026" width="1600" height="900" loading="lazy" />
+              <img src="images/KDD2026_img02.jpg" alt="Visitors at the KISTI booth during the KDD 2026 corporate exhibition" width="1600" height="900" loading="lazy" />
+            </div>
+
+            <h4>💡 Key Exhibition Highlights</h4>
+            <ul>
+              <li>
+                <strong>🔬 AI Co-Scientist — autonomous research &amp; discovery.</strong>
+                Automatically analyzes vast volumes of scientific literature to synthesize
+                knowledge, generates novel research hypotheses, and suggests promising
+                directions for scientific breakthroughs.
+              </li>
+              <li>
+                <strong>🤖 KONI-WebAgent — document-grounded form filling.</strong>
+                Streamlines administrative burdens by parsing multi-modal documents such as
+                resumes and research proposals, then automatically filling out complex web
+                forms across research portals and grant management systems.
+              </li>
+              <li>
+                <strong>🛠️ KONI-Forge — comprehensive LLMOps platform.</strong>
+                Built for high-performance computing environments to manage the entire LLM
+                lifecycle, facilitating seamless fine-tuning, model evaluation, dynamic
+                serving, and hyperparameter optimization for specialized scientific models.
+              </li>
+            </ul>
+
+            <h4>🌐 Building an Open Science Ecosystem</h4>
+            <p>
+              Beyond standalone agents, we shared our progress in building an open-science
+              platform for researchers and industry partners worldwide — including multimodal
+              LLM (MLLM) architectures for complex document understanding, advanced
+              parameter-efficient fine-tuning (PEFT) techniques, and large-scale scientific
+              dataset preprocessing pipelines.
+            </p>
+          </div>
+        </li>
+        <li id="website-launch">
+          <time>2026.07</time>
+          <div class="news-body">
+            <h3>Our New Website Is Live</h3>
+            <p>Our new website is launched. More updates coming soon!</p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Large-scale AI Research Center</h4>
+          <p>
+            Division of AI and Data<br />
+            Korea Institute of Science and Technology Information (KISTI)<br />
+            245 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea
+          </p>
+          <p class="footer-contact">
+            <a href="mailto:kyongha@kisti.re.kr">kyongha@kisti.re.kr</a><br />
+            <a href="tel:+82428691642">+82-42-869-1642</a>
+          </p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="media.html">Media</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="https://www.kisti.re.kr/eng/" target="_blank" rel="noopener">KISTI</a></li>
+            <li><a href="https://huggingface.co/KISTI-KONI" target="_blank" rel="noopener">KONI on Hugging Face</a></li>
+            <li><a href="https://github.com/KISTI-KONI" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.youtube.com/channel/UCPT6tS04saHyotXBanBHylQ" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Large-scale AI Research Center, KISTI. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

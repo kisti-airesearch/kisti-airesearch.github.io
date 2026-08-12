@@ -281,13 +281,15 @@ a:hover { text-decoration: underline; }
    -------------------------------------------------------------------------- */
 
 .news-list { list-style: none; }
-.news-list li {
+/* Direct-child selectors only: a news body may contain its own nested <ul>,
+   which must not inherit the flex row / divider styling of an entry. */
+.news-list > li {
   display: flex;
   gap: 24px;
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
 }
-.news-list li:last-child { border-bottom: none; }
+.news-list > li:last-child { border-bottom: none; }
 .news-list time {
   flex-shrink: 0;
   width: 110px;
@@ -295,6 +297,53 @@ a:hover { text-decoration: underline; }
   font-size: 14px;
   font-weight: 600;
 }
+
+/* News page: headline plus body text */
+.news-body h3 {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.news-body p { color: var(--text-muted); font-size: 14.5px; }
+/* The global reset strips margins, so space siblings explicitly. */
+.news-body > * + * { margin-top: 12px; }
+.news-body h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 20px;
+}
+.news-body ul {
+  margin-left: 18px;
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+.news-body ul li { margin-bottom: 8px; }
+.news-body ul li:last-child { margin-bottom: 0; }
+.news-body ul strong { color: var(--navy); }
+
+/* Photo pair inside a news entry */
+.news-figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.news-figures img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* Home page: headline-only list linking into news.html */
+.news-titles a { font-weight: 600; }
+
+/* Deep links from the home page must clear the sticky 73px header, and the
+   item they point at gets highlighted so it is obvious what was linked. */
+.news-list > li[id] { scroll-margin-top: 92px; }
+.news-list > li:target h3 { color: var(--blue); }
 
 /* --------------------------------------------------------------------------
    People
@@ -416,6 +465,9 @@ a:hover { text-decoration: underline; }
 .video-link { margin-top: 14px; font-size: 14px; font-weight: 600; }
 .video-link a { color: var(--blue); }
 
+/* "All news →" style link at the end of a section */
+.more-link { margin-top: 20px; font-size: 14.5px; font-weight: 600; }
+
 /* Embedded video (YouTube iframe) — spans the content column, so it lines up
    with the section rules and the news list below it. */
 .video-embed,
@@ -520,5 +572,6 @@ a:hover { text-decoration: underline; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
 
   .research-block { grid-template-columns: 1fr; }
-  .news-list li { flex-direction: column; gap: 4px; }
+  .news-list > li { flex-direction: column; gap: 4px; }
+  .news-figures { grid-template-columns: 1fr; }
 }

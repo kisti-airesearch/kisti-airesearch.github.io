@@ -337,11 +337,11 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius);
 }
 
-/* Home page: headline-only list linking into news.html */
-.news-titles a { font-weight: 600; }
+/* Home page: headline-only list, no links — "All news" carries the click */
+.news-titles span { font-weight: 600; color: var(--navy); }
 
-/* Deep links from the home page must clear the sticky 73px header, and the
-   item they point at gets highlighted so it is obvious what was linked. */
+/* Entries keep an id so a single item can be linked directly. Such a link
+   must clear the sticky 73px header, and the target gets highlighted. */
 .news-list > li[id] { scroll-margin-top: 92px; }
 .news-list > li:target h3 { color: var(--blue); }
 

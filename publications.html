@@ -49,21 +49,44 @@
       <!-- ================================================================
            HOW TO ADD A PUBLICATION
            Copy one of the <li> blocks below under the right year, then edit:
+             - .pub-label   : [J#] for a journal article, [C#] for a
+                              conference paper. Numbering runs OLDEST FIRST
+                              and is continuous across years, so a new paper
+                              simply takes the next unused number in its
+                              series and existing labels never change.
              - .pub-title   : paper title
-             - .pub-authors : author list (bold center members with <strong>)
+             - .pub-authors : author list
              - .pub-venue   : conference/journal name and year
              - .pub-links   : Paper / Code / Model links (delete unused ones)
+
+           Entries are listed NEWEST FIRST by publication date. Papers sharing
+           one venue (e.g. two ICLR 2026 papers) are ordered alphabetically by
+           title, and their labels follow that same order.
            ================================================================ -->
 
       <h2 class="pub-year">2026</h2>
       <ul class="pub-list">
         <li>
-          <div class="pub-title">SpectraBench: A Three-Stage Evolution Framework for Intelligent Large Language Model Evaluation</div>
-          <div class="pub-authors">Gunwoo Lee, Rae-Young Jang, Sang-Hwan Gwak, Kyong-Ha Lee, Ryong Lee</div>
-          <div class="pub-venue">Future Generation Computer Systems, Vol. 181, 2026</div>
+          <div class="pub-title"><span class="pub-label">[C6]</span>Planning Before Reasoning: A Vision-Language Dataset for Structured Stepwise Reasoning in Document Understanding</div>
+          <div class="pub-authors">DongJae Shin, Hangyeol Yoo, Yerin Nam, Hoyeon Shin, SeungWoo Song, Seohyun Song, Donghun Yang, KyungTae Lim</div>
+          <div class="pub-venue">Findings of the Association for Computational Linguistics: EMNLP 2026</div>
         </li>
         <li>
-          <div class="pub-title">EnergyRoute: Energy-Based Uncertainty Routing for Selective Retrieval and Large Language Model Assistance in the Hierarchical Classification of Biotechnology R&amp;D Projects</div>
+          <!-- TODO: replace with the full author list once it is available. -->
+          <div class="pub-title"><span class="pub-label">[J5]</span>Enhancing Scientific QA with LLM-Generated Data: Effective Filtering via Simple Feature-Based Association Rule Mining</div>
+          <div class="pub-authors">Gwangseon Jang et al.</div>
+          <div class="pub-venue">Knowledge and Information Systems, 2026 (accepted)</div>
+        </li>
+        <li>
+          <div class="pub-title"><span class="pub-label">[C5]</span>Judging What We Cannot Solve: A Consequence-Based Approach for Oracle-Free Evaluation of Research-Level Math</div>
+          <div class="pub-authors">Guijin Son, Donghun Yang, Hitesh Laxmichand Patel, Hyunwoo Ko, Amit Agarwal, Sunghee Ahn, Kyong-Ha Lee, Youngjae Yu</div>
+          <div class="pub-venue">ICML 2026 (Spotlight) — The Forty-Third International Conference on Machine Learning</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2602.06291" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </li>
+        <li>
+          <div class="pub-title"><span class="pub-label">[J4]</span>EnergyRoute: Energy-Based Uncertainty Routing for Selective Retrieval and Large Language Model Assistance in the Hierarchical Classification of Biotechnology R&amp;D Projects</div>
           <div class="pub-authors">Gwangseon Jang, Moo Woong Kim, Youn-jeong Nam, Yewon Yong, Kyong-Ha Lee, Chanuk Lim</div>
           <div class="pub-venue">Scientific Reports, Vol. 16, Article 19697, 2026</div>
           <div class="pub-links">
@@ -71,7 +94,7 @@
           </div>
         </li>
         <li>
-          <div class="pub-title">Leveraging Pretrained Knowledge at Inference Time: LoRA-Gated Contrastive Decoding for Multilingual Factual Language Generation in Adapted LLMs</div>
+          <div class="pub-title"><span class="pub-label">[C3]</span>Leveraging Pretrained Knowledge at Inference Time: LoRA-Gated Contrastive Decoding for Multilingual Factual Language Generation in Adapted LLMs</div>
           <div class="pub-authors">Gwangseon Jang, Hongseok Choi, Chanuk Lim, Kyong-Ha Lee, Mun Yong Yi</div>
           <div class="pub-venue">ICLR 2026 (Poster) — The Fourteenth International Conference on Learning Representations</div>
           <div class="pub-links">
@@ -79,7 +102,7 @@
           </div>
         </li>
         <li>
-          <div class="pub-title">Pushing on Multilingual Reasoning Models with Language-Mixed Chain-of-Thought</div>
+          <div class="pub-title"><span class="pub-label">[C4]</span>Pushing on Multilingual Reasoning Models with Language-Mixed Chain-of-Thought</div>
           <div class="pub-authors">Guijin Son, Donghun Yang, Hitesh Laxmichand Patel, Amit Agarwal, Hyunwoo Ko, Chanuk Lim, Srikant Panda, Minhyuk Kim, Nikunj Drolia, Dasol Choi, Kyong-Ha Lee, Youngjae Yu</div>
           <div class="pub-venue">ICLR 2026 — The Fourteenth International Conference on Learning Representations</div>
           <div class="pub-links">
@@ -87,35 +110,16 @@
           </div>
         </li>
         <li>
-          <div class="pub-title">Judging What We Cannot Solve: A Consequence-Based Approach for Oracle-Free Evaluation of Research-Level Math</div>
-          <div class="pub-authors">Guijin Son, Donghun Yang, Hitesh Laxmichand Patel, Hyunwoo Ko, Amit Agarwal, Sunghee Ahn, Kyong-Ha Lee, Youngjae Yu</div>
-          <div class="pub-venue">ICML 2026 (Spotlight) — The Forty-Third International Conference on Machine Learning</div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2602.06291" target="_blank" rel="noopener">Paper</a>
-          </div>
+          <div class="pub-title"><span class="pub-label">[J3]</span>SpectraBench: A Three-Stage Evolution Framework for Intelligent Large Language Model Evaluation</div>
+          <div class="pub-authors">Gunwoo Lee, Rae-Young Jang, Sang-Hwan Gwak, Kyong-Ha Lee, Ryong Lee</div>
+          <div class="pub-venue">Future Generation Computer Systems, Vol. 181, 2026</div>
         </li>
       </ul>
 
       <h2 class="pub-year">2025</h2>
       <ul class="pub-list">
         <li>
-          <div class="pub-title">MICD: More Intra-Class Diversity in Few-Shot Text Classification with Many Classes</div>
-          <div class="pub-authors">Gwangseon Jang, Hyeon Ji Jeong, Mun Yong Yi</div>
-          <div class="pub-venue">Knowledge-Based Systems, Vol. 309, Article 112851, 2025</div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1016/j.knosys.2024.112851" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </li>
-        <li>
-          <div class="pub-title">GRAIL: Graph Retrieval-Augmented In-Context Learning for Node Classification in Real-World Textual-Attributed Graphs</div>
-          <div class="pub-authors">Chanuk Lim, Kyong-Ha Lee, Hyun Ji Jeong, Sungsu Lim</div>
-          <div class="pub-venue">EDBT 2025 — 28th International Conference on Extending Database Technology, pp. 1039–1047</div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.48786/edbt.2025.87" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </li>
-        <li>
-          <div class="pub-title">ScholarBench: A Bilingual Benchmark for Abstraction, Comprehension, and Reasoning Evaluation in Academic Contexts</div>
+          <div class="pub-title"><span class="pub-label">[C2]</span>ScholarBench: A Bilingual Benchmark for Abstraction, Comprehension, and Reasoning Evaluation in Academic Contexts</div>
           <div class="pub-authors">Dongwon Noh, Donghyeok Koh, Junghun Yuk, Gyuwan Kim, Jaeyong Lee, Kyungtae Lim, Cheoneum Park</div>
           <div class="pub-venue">Findings of the Association for Computational Linguistics: EMNLP 2025</div>
           <div class="pub-links">
@@ -123,11 +127,27 @@
           </div>
         </li>
         <li>
-          <div class="pub-title">SciLinkBERT: A BERT-Style Language Model for Understanding Scientific Texts with Citations</div>
+          <div class="pub-title"><span class="pub-label">[J2]</span>SciLinkBERT: A BERT-Style Language Model for Understanding Scientific Texts with Citations</div>
           <div class="pub-authors">Ju-Yeon Yu, Donghun Yang, Kyong-Ha Lee</div>
           <div class="pub-venue">The Journal of Supercomputing, Vol. 81, Article 1356, 2025</div>
           <div class="pub-links">
             <a href="https://doi.org/10.1007/s11227-025-07838-y" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </li>
+        <li>
+          <div class="pub-title"><span class="pub-label">[C1]</span>GRAIL: Graph Retrieval-Augmented In-Context Learning for Node Classification in Real-World Textual-Attributed Graphs</div>
+          <div class="pub-authors">Chanuk Lim, Kyong-Ha Lee, Hyun Ji Jeong, Sungsu Lim</div>
+          <div class="pub-venue">EDBT 2025 — 28th International Conference on Extending Database Technology, pp. 1039–1047</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.48786/edbt.2025.87" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </li>
+        <li>
+          <div class="pub-title"><span class="pub-label">[J1]</span>MICD: More Intra-Class Diversity in Few-Shot Text Classification with Many Classes</div>
+          <div class="pub-authors">Gwangseon Jang, Hyeon Ji Jeong, Mun Yong Yi</div>
+          <div class="pub-venue">Knowledge-Based Systems, Vol. 309, Article 112851, 2025</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1016/j.knosys.2024.112851" target="_blank" rel="noopener">Paper</a>
           </div>
         </li>
       </ul>

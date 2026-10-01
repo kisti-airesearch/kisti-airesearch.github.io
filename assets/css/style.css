@@ -326,7 +326,8 @@ a:hover { text-decoration: underline; }
 /* Photo pair inside a news entry */
 .news-figures {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* auto-fit so a lone photo fills the column instead of sitting in half of it */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 12px;
 }
 .news-figures img {

@@ -12,14 +12,14 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   <!-- Bump ?v= whenever style.css changes, so browsers never pair cached CSS with new HTML. -->
-  <link rel="stylesheet" href="assets/css/style.css?v=2026-10-02" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2026-11-05d" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">
-        <img src="images/KISTI_logo.jpg" alt="KISTI — Korea Institute of Science and Technology Information" />
+        <img src="images/KISTI_logo.png" alt="KISTI — Korea Institute of Science and Technology Information" />
         <span class="brand-text">
           <span class="brand-name">Large-scale AI Research Center</span>
           <span class="brand-sub">Division of AI and Data</span>
@@ -44,8 +44,8 @@
     <div class="container">
       <h1>Research</h1>
       <p>
-        From accelerating scientific discovery to autonomous AI Co-Scientist systems and
-        science-specialized large language models — our research applies large-scale AI
+        From accelerating scientific discovery to autonomous <span class="nowrap">AI Co-Scientist</span> systems and
+        <span class="nowrap">science-specialized</span> large language models&nbsp;— our research applies large-scale AI
         to real scientific problems.
       </p>
     </div>
@@ -76,7 +76,7 @@
           <h3><a href="AI_Co-Scientist_promo_v6.html">AI Co-Scientist</a></h3>
           <p>
             Improving the efficiency and productivity of the science and technology research
-            process through the development of 'AI for Science' technology — an autonomous
+            process through the development of 'AI for Science' technology&nbsp;— an autonomous
             <strong>AI Co-Scientist</strong> system that supports the entire research workflow.
           </p>
           <ul>
@@ -92,7 +92,7 @@
 
       <div class="research-block" id="koni">
         <div>
-          <h3>KONI - KISTI Open Neural Intelligence</h3>
+          <h3>KONI&nbsp;— KISTI Open Neural Intelligence</h3>
           <p>
             We develop <strong>KONI (KISTI Open Neural Intelligence)</strong>, a family of
             large language models specialized for the science and technology domain that
@@ -111,7 +111,7 @@
                 <li><a href="https://huggingface.co/KISTI-KONI/KONI-Llama3.1-70B-Instruct-20241115" target="_blank" rel="noopener">KONI-Llama3.1-70B-Instruct</a></li>
                 <li><a href="https://huggingface.co/KISTI-KONI/KONI-Llama3.1-8B-Instruct-20241024" target="_blank" rel="noopener">KONI-Llama3.1-8B-Instruct</a></li>
                 <li>
-                  <a href="https://huggingface.co/collections/KISTI-KONI/koni-r" target="_blank" rel="noopener">KONI-R</a> — reasoning-specialized models:
+                  <a href="https://huggingface.co/collections/KISTI-KONI/koni-r" target="_blank" rel="noopener">KONI-R</a>&nbsp;— reasoning-specialized models:
                   <ul>
                     <li><a href="https://huggingface.co/KISTI-KONI/KONI-7B-R-20250831" target="_blank" rel="noopener">KONI-7B-R</a></li>
                     <li><a href="https://huggingface.co/KISTI-KONI/KONI-Llama3.1-8B-R-20250831" target="_blank" rel="noopener">KONI-Llama3.1-8B-R</a></li>
@@ -128,8 +128,8 @@
           <h3>KONI-Scientist</h3>
           <p>
             The research-agent pillar of the KONI Series. KONI-Scientist takes a research
-            question and carries it through to a finished deliverable — surveying the
-            literature, proposing hypotheses, and drafting the write-up — rather than
+            question and carries it through to a finished deliverable&nbsp;— surveying the
+            literature, proposing hypotheses, and drafting the write-up&nbsp;— rather than
             answering a question and stopping there.
           </p>
           <ul>
@@ -147,14 +147,14 @@
         <div>
           <h3>KONI-Weave</h3>
           <p>
-            The data pillar of the KONI Series. Weave turns messy source documents — HWP,
-            PDF, DOCX — into structured, balanced training data without a hand-defined
+            The data pillar of the KONI Series. Weave turns messy source documents&nbsp;— HWP,
+            PDF, DOCX&nbsp;— into structured, balanced training data without a hand-defined
             schema: it discovers document types and metadata fields directly from the
             corpus, classifies every document against them, and groups the results into a
             reusable knowledge base rather than a disposable intermediate step.
           </p>
           <ul>
-            <li>Automatic schema discovery: candidate fields are scored by corpus frequency, discriminative power, and redundancy — no manual taxonomy to define or maintain</li>
+            <li>Automatic schema discovery: candidate fields are scored by corpus frequency, discriminative power, and redundancy&nbsp;— no manual taxonomy to define or maintain</li>
             <li>Five-stage pipeline: parsing, schema discovery, classification, entity-based knowledge base construction, and balanced training-data synthesis</li>
             <li>Designed for scale, targeting corpora of roughly 100 million pages (currently at the design-and-prototype stage)</li>
           </ul>
@@ -170,11 +170,11 @@
           <p>
             The training-operations pillar of the KONI Series. Rather than guessing whether
             to use retrieval, fine-tuning, or both, Forge measures how much a base model
-            already knows about a target domain and adapts it accordingly — a five-stage
+            already knows about a target domain and adapts it accordingly&nbsp;— a five-stage
             pipeline that runs entirely locally, with no external API calls.
           </p>
           <ul>
-            <li>KBD (Knowledge Boundary Detection) scores what the base model already knows on a 0–1 scale and routes the strategy — retrieval-only, hybrid, or full fine-tuning — recommending the right one in about 83% of cases within minutes</li>
+            <li>KBD (Knowledge Boundary Detection) scores what the base model already knows on a 0–1 scale and routes the strategy&nbsp;— retrieval-only, hybrid, or full fine-tuning&nbsp;— recommending the right one in about 83% of cases within minutes</li>
             <li>TWIST expands training data by varying sentence structure rather than swapping synonyms, while a training agent auto-sets hyperparameters such as LoRA rank, learning rate, and step count</li>
             <li>BiLT guards against catastrophic forgetting during training; at inference, queries are routed between retrieval and the fine-tuned model and blended by confidence</li>
           </ul>
@@ -189,8 +189,8 @@
           <h3>KONI-Prism</h3>
           <p>
             The application layer of the KONI Series, and the most mature of its
-            pillars. Prism is a private, multimodal research assistant — reading text,
-            images, and audio together — built for air-gapped settings where no cloud
+            pillars. Prism is a private, multimodal research assistant&nbsp;— reading text,
+            images, and audio together&nbsp;— built for air-gapped settings where no cloud
             service can be called.
           </p>
           <ul>
@@ -211,13 +211,13 @@
           <p>
             The web-agent pillar of the KONI Series. Rather than driving a browser from
             screenshots alone, WebAgent reads a source document and acts on the web from
-            it — filling forms and navigating multi-step flows, with a human approving
+            it&nbsp;— filling forms and navigating multi-step flows, with a human approving
             anything irreversible. It ships today as a Chrome/Edge extension that runs
             entirely in the browser.
           </p>
           <ul>
-            <li>DGFF (Document-Grounded Form Filling) parses HWP · PDF · DOCX, tables and page structure included, and binds each value to a detected form field — no input is written without a backing document span</li>
-            <li>Plan–Navigate–Verify loop: Planner decomposes the goal, Navigator clicks and types, Validator checks each result — each on its own model, re-planning automatically when a page doesn't match</li>
+            <li>DGFF (Document-Grounded Form Filling) parses HWP · PDF · DOCX, tables and page structure included, and binds each value to a detected form field&nbsp;— no input is written without a backing document span</li>
+            <li>Plan–Navigate–Verify loop: Planner decomposes the goal, Navigator clicks and types, Validator checks each result&nbsp;— each on its own model, re-planning automatically when a page doesn't match</li>
             <li>IAG (Irreversible-Action Gate) holds submit, payment, and send for explicit approval; local by construction under Manifest V3, so credentials never leave the device</li>
           </ul>
           <p class="video-link">
@@ -233,8 +233,8 @@
             KONI-Graph is a self-evolving knowledge graph (KG) platform that automatically
             transforms domain documents into a structured, queryable knowledge base. It
             extracts entities and relations from ingested documents, serves grounded
-            answers with source citations through Graph RAG, and—when a query reveals a
-            knowledge gap—autonomously retrieves external knowledge and merges it into the
+            answers with source citations through Graph RAG, and&nbsp;— when a query reveals a
+            knowledge gap&nbsp;— autonomously retrieves external knowledge and merges it into the
             graph under strict verification. The platform is domain-agnostic and designed
             for air-gapped deployment, with every component (LLM, embedding, search)
             swappable between cloud APIs and on-premises models.
@@ -242,7 +242,7 @@
           <ul>
             <li><strong>Automated Document-to-Graph Construction.</strong> Ingested documents are automatically converted into nodes and edges through chunking and two-pass LLM extraction, with the document's hierarchical structure preserved in the graph. A domain knowledge graph is built without manual knowledge modeling.</li>
             <li><strong>Self-Evolving Knowledge Augmentation.</strong> When the system cannot answer a query, it detects the knowledge gap, retrieves external knowledge, expands the graph on the fly, and re-answers the original question. Knowledge grows along the direction of actual user demand rather than through bulk pre-ingestion.</li>
-            <li><strong>Contamination-Proof Knowledge Curation.</strong> All incoming knowledge—whether from document ingestion or self-expansion—passes through a single gated pipeline: rule-based validation, conservative entity resolution, and an LLM judge that enforces source authority (official documents &gt; curated corpus &gt; web). Conflicting or citation-spoofed content is blocked or quarantined rather than silently merged, and every answer carries citations traceable back to the original source.</li>
+            <li><strong>Contamination-Proof Knowledge Curation.</strong> All incoming knowledge&nbsp;— whether from document ingestion or self-expansion&nbsp;— passes through a single gated pipeline: rule-based validation, conservative entity resolution, and an LLM judge that enforces source authority (official documents &gt; curated corpus &gt; web). Conflicting or citation-spoofed content is blocked or quarantined rather than silently merged, and every answer carries citations traceable back to the original source.</li>
           </ul>
         </div>
       </div>

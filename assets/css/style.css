@@ -35,6 +35,17 @@ body {
 img { max-width: 100%; display: block; }
 
 a { color: var(--blue); text-decoration: none; }
+
+/* Line breaking: let the browser break lines, never hand-placed <br>s.
+   Headings and short lead/intro text balance their line lengths; prose
+   avoids leaving a single word on its last line. */
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+.nowrap { white-space: nowrap; }
+
+/* <br class="sb"> splits sentences onto their own lines on full-width screens
+   only; below the header breakpoint the text flows and balances naturally. */
+@media (max-width: 1080px) { br.sb { display: none; } }
 a:hover { text-decoration: underline; }
 
 .container {
@@ -82,7 +93,7 @@ a:hover { text-decoration: underline; }
 }
 
 .brand-text { border-left: 1px solid var(--border); padding-left: 14px; }
-.brand-name { font-size: 15px; display: block; }
+.brand-name { font-size: 15px; display: block; white-space: nowrap; }
 .brand-sub {
   display: block;
   font-size: 11.5px;
@@ -98,7 +109,7 @@ a:hover { text-decoration: underline; }
 
 .site-nav a {
   display: block;
-  padding: 8px 14px;
+  padding: 8px 11px;
   border-radius: 8px;
   color: var(--text);
   font-weight: 500;
@@ -154,14 +165,15 @@ a:hover { text-decoration: underline; }
   line-height: 1.15;
   font-weight: 800;
   letter-spacing: -0.5px;
-  max-width: 760px;
+  max-width: none;
 }
 
 .hero p.lead {
   margin-top: 22px;
   font-size: 18px;
   color: #c9d6e8;
-  max-width: 660px;
+  max-width: none;
+  text-wrap: balance;
 }
 
 .hero-actions { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; }
@@ -210,7 +222,6 @@ a:hover { text-decoration: underline; }
 }
 
 .section .section-intro {
-  max-width: 720px;
   color: var(--text-muted);
   margin-bottom: 40px;
 }
@@ -235,7 +246,7 @@ a:hover { text-decoration: underline; }
   padding: 56px 0;
 }
 .page-hero h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; }
-.page-hero p { margin-top: 10px; color: #c9d6e8; max-width: 660px; }
+.page-hero p { margin-top: 10px; color: #c9d6e8; }
 
 /* --------------------------------------------------------------------------
    Cards
@@ -433,7 +444,7 @@ a:hover { text-decoration: underline; }
 
 .research-block h3 { font-size: 20px; color: var(--navy); margin-bottom: 8px; }
 .research-block h3 a { color: inherit; }
-.research-block p { color: var(--text-muted); max-width: 760px; }
+.research-block p { color: var(--text-muted); }
 .research-block ul {
   margin: 12px 0 0 18px;
   color: var(--text-muted);
@@ -526,7 +537,9 @@ a:hover { text-decoration: underline; }
    Responsive
    -------------------------------------------------------------------------- */
 
-@media (max-width: 860px) {
+/* The logo, center name and seven menu items need ~1060px side by side;
+   below that, fold the menu into the toggle so nothing overlaps or wraps. */
+@media (max-width: 1080px) {
   .nav-toggle { display: block; }
 
   .site-nav {
@@ -542,8 +555,11 @@ a:hover { text-decoration: underline; }
   .site-nav.open { display: block; }
   .site-nav ul { flex-direction: column; padding: 12px 20px; }
   .site-nav a { padding: 12px 10px; }
+}
 
+@media (max-width: 860px) {
   .brand-sub { display: none; }
+  .brand-name { white-space: normal; }
 
   .about-split { grid-template-columns: 1fr; }
   .about-split .mascot { max-width: 180px; }
